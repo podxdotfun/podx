@@ -1,5 +1,6 @@
 [build]
-command = "npm run pages:build"
+command = "npm install && npm run pages:build"
+node_compat = true
 
 [build.upload]
 format = "modules"
@@ -9,6 +10,11 @@ bucket = ".vercel/output/static"
 
 [env.production]
 name = "podx-production"
+node_compat = true
 
 [env.preview]
-name = "podx-preview" 
+name = "podx-preview"
+node_compat = true
+
+[compatibility_flags]
+nodejs_compat = true 
