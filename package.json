@@ -4,7 +4,8 @@
     "packageManager": "npm@10.8.3",
     "scripts": {
         "preinstall": "npx only-allow npm",
-        "build": "cd frontend && npm install --no-workspaces && npm run build",
+        "build": "cd frontend && npm install --no-workspaces && npm run pages:build",
+        "deploy": "cd frontend && npm run pages:deploy",
         "dev": "cd frontend && npm run dev",
         "start": "cd frontend && npm start"
     },
