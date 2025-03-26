@@ -7,6 +7,7 @@
         "server"
     ],
     "scripts": {
+        "preinstall": "npx only-allow npm",
         "build": "cd frontend && npm install && npm run build",
         "dev": "cd frontend && npm run dev",
         "start": "cd frontend && npm start"
@@ -14,5 +15,9 @@
     "engines": {
         "node": ">=22.9.0",
         "npm": ">=10.8.3"
+    },
+    "corepack": {
+        "enabled": true,
+        "preferredPackageManager": "npm@10.8.3"
     }
 } 

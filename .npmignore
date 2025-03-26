@@ -1,0 +1,10 @@
+.git
+.gitignore
+.env
+.env.*
+node_modules
+yarn.lock
+.yarn
+.yarnrc
+.yarnrc.yml
+.pnp.* 
